@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Result (3.2.3)
+  - SugarRecord/CoreData (3.1.2):
+    - Result (~> 3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - SugarRecord/CoreData
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  SugarRecord: be6aa5c18b4a4dec0de4c1f49fc61c85eabb5328
+
+PODFILE CHECKSUM: d9bd99b09e8953467318e0d59b1ef2c3aa79aed9
+
+COCOAPODS: 1.2.1

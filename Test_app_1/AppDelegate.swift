@@ -12,10 +12,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    let networkManager = NetworkManager.shared
+    let coreDataManager = CoreDataManager.shared
+    var webServiceModel:WebServiceModel?
+    var apiTestData:[WebServiceModel] = []
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        apiTestData = self.coreDataManager.fetchApiTest()
+        self.networkManager.request(url: "") { (json) in
+            self.webServiceModel = WebServiceModel(json:json!)
+           // print(self.webServiceModel)
+            print(self.apiTestData)
+        }
         return true
     }
 
